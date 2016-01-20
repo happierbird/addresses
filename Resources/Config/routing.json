@@ -1,0 +1,34 @@
+{
+    "routes": {
+        "get-address": {
+            "path": "/address/{id}.{format}",
+            "controller": "CoolBlue\\Controller\\AddressController::getAction",
+            "method": "GET",
+            "requirements":{
+                "id": "(\\d+)",
+                "format": "(html|json|xml)"
+            }
+        },
+        "update-address": {
+            "path": "/address/{id}/",
+            "controller": "CoolBlue\\Controller\\AddressController::updateAction",
+            "method": "PUT",
+            "requirements":{
+                "id": "(\\d+)"
+            }
+        },
+        "delete-address": {
+            "path": "/address/{id}/",
+            "controller": "CoolBlue\\Controller\\AddressController::deleteAction",
+            "method": "DELETE",
+            "requirements":{
+                "id": "(\\d+)"
+            }
+        },
+        "add-address": {
+            "path": "/address/",
+            "controller": "CoolBlue\\Controller\\AddressController::addAction",
+            "method": "POST"
+        }
+    }
+}

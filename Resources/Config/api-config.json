@@ -1,0 +1,9 @@
+{
+    "currentStorageFormat": "csv",
+    "storages": {
+        "csv": {
+            "path": "../Resources/Data/addresses.csv",
+            "encoding": "UTF-8"
+        }
+    }
+}
